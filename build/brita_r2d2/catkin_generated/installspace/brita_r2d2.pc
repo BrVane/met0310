@@ -1,0 +1,8 @@
+prefix=/home/vboxuser/met0310/install
+
+Name: brita_r2d2
+Description: Description of brita_r2d2
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

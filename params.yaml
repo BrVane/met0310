@@ -1,0 +1,14 @@
+rosdistro: 'noetic
+
+  '
+roslaunch:
+  uris:
+    host_ubuntu20__42773: http://Ubuntu20:42773/
+rosversion: '1.16.0
+
+  '
+run_id: 6944f0e0-f95b-11ed-9ab8-8b5412e6ba5c
+turtlesim:
+  background_b: 255
+  background_g: 86
+  background_r: 150
