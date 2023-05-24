@@ -1,0 +1,17 @@
+roslaunch urdf_tutorial display.launch model:=$(rospack find brita_r2d2)/urdf/r2d2.urdf
+roslaunch turtlebot3_navigation turtlebot3_navigation.launch map_file:=$HOME/met0310/src/map/mymap.yaml
+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
+
+Password:
+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
+
+stuff from met0310 package.xml:
+
+  <!-- The export tag contains other, unspecified, tags -->
+  <export>
+    <!-- Other tools can request additional information be placed here -->
+
+  </export>
+  
+  Took this from my_plaza.launch file:
+  <arg name="model" default="$(env TURTLEBOT3_MODEL)" doc="model type [burger, waffle, waffle_pi]"/>
