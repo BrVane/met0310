@@ -3,7 +3,7 @@ roslaunch turtlebot3_navigation turtlebot3_navigation.launch map_file:=$HOME/met
 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
 
 Password:
-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
+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
 
 stuff from met0310 package.xml:
 
