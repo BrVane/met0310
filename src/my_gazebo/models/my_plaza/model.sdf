@@ -314,6 +314,115 @@
       </visual>
       <pose frame=''>-1.502 0.092 0 0 0 -1.5708</pose>
     </link>
+    <link name='Cylinder_1'>
+      <collision name='Cylinder_1_Collision'>
+        <geometry>
+          <cylinder>
+            <radius>0.1</radius>
+            <length>1</length>
+          </cylinder>
+        </geometry>
+        <pose frame=''>0 0 0.5 0 -0 0</pose>
+      </collision>
+      <visual name='Cylinder_1_Visual'>
+        <pose frame=''>0 0 0.5 0 -0 0</pose>
+        <geometry>
+          <cylinder>
+            <radius>0.1</radius>
+            <length>1</length>
+          </cylinder>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Green</name>
+          </script>
+          <ambient>1 1 1 1</ambient>
+        </material>
+      </visual>
+      <pose frame=''>-0.2 -1 0 0 -0 0</pose>
+    </link>
+    <link name='Cylinder_2'>
+      <collision name='Cylinder_2_Collision'>
+        <geometry>
+          <cylinder>
+            <radius>0.1</radius>
+            <length>1</length>
+          </cylinder>
+        </geometry>
+        <pose frame=''>0 0 0.5 0 -0 0</pose>
+      </collision>
+      <visual name='Cylinder_2_Visual'>
+        <pose frame=''>0 0 0.5 0 -0 0</pose>
+        <geometry>
+          <cylinder>
+            <radius>0.1</radius>
+            <length>1</length>
+          </cylinder>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Green</name>
+          </script>
+          <ambient>1 1 1 1</ambient>
+        </material>
+      </visual>
+      <pose frame=''>-2 -1 0 0 0 0</pose>
+    </link>
+    <link name='Box_1'>
+      <collision name='Box_1_Collision'>
+        <geometry>
+          <box>
+            <size>0.2 0.2 1.8</size>
+          </box>
+        </geometry>
+        <pose frame=''>0 0 0.1 0 -0 0</pose>
+      </collision>
+      <visual name='Box_1_Visual'>
+        <pose frame=''>0 0 0.1 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.2 0.2 1.8</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Green</name>
+          </script>
+          <ambient>1 1 1 1</ambient>
+        </material>
+      </visual>
+      <pose frame=''>-1 0.5 0 0 -0 0</pose>
+    </link>
+    <link name='Box_2'>
+      <collision name='Box_2_Collision'>
+        <geometry>
+          <box>
+            <size>0.2 0.2 1.8</size>
+          </box>
+        </geometry>
+        <pose frame=''>0 0 0.1 0 -0 0</pose>
+      </collision>
+      <visual name='Box_2_Visual'>
+        <pose frame=''>0 0 0.1 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.2 0.2 1.8</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Green</name>
+          </script>
+          <ambient>1 1 1 1</ambient>
+        </material>
+      </visual>
+      <pose frame=''>-0 -1.5 0 0 0 0</pose>
+    </link>
     <static>1</static>
   </model>
 </sdf>
+

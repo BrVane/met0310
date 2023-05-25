@@ -13,7 +13,19 @@
     <arg name="debug" value="false"/>
   </include>
 
-  <param name="robot_description" command="$(find xacro)/xacro --inorder '$(find brita_r2d2)/urdf/r2d2.urdf.xacro'" />
-
-  <node pkg="gazebo_ros" type="spawn_model" name="spawn_urdf"  args="-urdf -model r2d2 -x $(arg x_pos) -y $(arg y_pos) -z $(arg z_pos) -param robot_description" />
+  
+  <!-- Spawn the R2D2 robot -->   
+  
+  <param name="robot_description" command="$(find xacro)/xacro --inorder '$(find brita_r2d2)/urdf/r2d2.urdf.xacro'" />   
+  <node pkg="gazebo_ros" type="spawn_model" name="spawn_r2d2" args="-urdf -param robot_description -model r2d2 -x $(arg x_pos) -y $(arg y_pos) -z $(arg z_pos)" />
+  
+  
+  <!-- Spawn the model.sdf -->
+  
+  <node pkg="gazebo_ros" type="spawn_model" name="spawn_sdf"  args="-sdf -file $(find my_gazebo)/models/my_plaza/model.sdf -model my_plaza -x $(arg x_pos) -y $(arg y_pos) -z $(arg z_pos)" />
+  
+  <node name="robot_state_publisher" pkg="robot_state_publisher" type ="robot_state_publisher"/>
+  <node name="joint_state_publisher" pkg="joint_state_publisher" type ="joint_state_publisher"/>
+  <node name="rviz" pkg ="rviz" type ="rviz" args="-d $(find brita_r2d2)/config/urdf.rviz"/>
 </launch>
+
